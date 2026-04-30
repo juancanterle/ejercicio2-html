@@ -1,0 +1,278 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	color: #222;
+	background-color: #fff;
+	line-height: 1.6;
+	font-size: 17px;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a {
+	color: #1a73e8;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* HEADER */
+.site-header {
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 14px 0;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.logo {
+	font-size: 26px;
+	font-weight: 800;
+	color: #00a1e0;
+	letter-spacing: -0.5px;
+}
+
+.main-nav ul {
+	display: flex;
+	list-style: none;
+	gap: 24px;
+}
+
+.main-nav a {
+	color: #222;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #00a1e0;
+	text-decoration: none;
+}
+
+.btn-donar {
+	background-color: #ff5a1f;
+	color: #fff;
+	padding: 8px 18px;
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.btn-donar:hover {
+	background-color: #e34a10;
+	text-decoration: none;
+}
+
+/* ARTICLE */
+.article-wrap {
+	padding: 40px 20px;
+	max-width: 780px;
+}
+
+.article-header {
+	margin-bottom: 28px;
+}
+
+.kicker {
+	color: #00a1e0;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 12px;
+}
+
+.article-header h1 {
+	font-size: 38px;
+	font-weight: 800;
+	line-height: 1.2;
+	color: #111;
+	margin-bottom: 16px;
+}
+
+.dek {
+	font-size: 20px;
+	color: #444;
+	font-weight: 400;
+	line-height: 1.45;
+	margin-bottom: 22px;
+}
+
+.meta {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 14px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 8px;
+	font-size: 14px;
+	color: #666;
+}
+
+.byline a {
+	color: #00a1e0;
+	font-weight: 600;
+}
+
+/* FIGURE */
+.article-figure {
+	margin: 28px 0;
+}
+
+.article-figure img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 2px;
+}
+
+.article-figure figcaption {
+	font-size: 13px;
+	color: #777;
+	font-style: italic;
+	padding-top: 8px;
+}
+
+/* BODY */
+.article-body p {
+	margin-bottom: 22px;
+	color: #2a2a2a;
+}
+
+.article-body h2 {
+	font-size: 26px;
+	font-weight: 800;
+	color: #111;
+	margin: 36px 0 16px;
+}
+
+.article-body h3 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #111;
+	margin: 28px 0 12px;
+}
+
+.article-body ul {
+	margin: 0 0 22px 22px;
+}
+
+.article-body li {
+	margin-bottom: 8px;
+}
+
+.article-body strong {
+	color: #111;
+}
+
+blockquote {
+	border-left: 4px solid #00a1e0;
+	padding: 14px 22px;
+	margin: 28px 0;
+	background-color: #f6fbfd;
+	font-size: 19px;
+	font-style: italic;
+	color: #333;
+}
+
+blockquote cite {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #777;
+	font-style: normal;
+}
+
+/* TAGS DE CHEQUEO */
+.tag {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.tag.verdadero { background-color: #2ecc71; }
+.tag.enga      { background-color: #f39c12; }
+.tag.falso     { background-color: #e74c3c; }
+
+/* ARTICLE FOOTER */
+.article-footer {
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #e5e5e5;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.tags-label {
+	font-weight: 700;
+	color: #555;
+	font-size: 14px;
+}
+
+.tags-list {
+	display: flex;
+	list-style: none;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.tags-list a {
+	background-color: #f0f0f0;
+	color: #333;
+	padding: 4px 12px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+
+.tags-list a:hover {
+	background-color: #00a1e0;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* SITE FOOTER */
+.site-footer {
+	background-color: #1a1a1a;
+	color: #ccc;
+	padding: 24px 0;
+	margin-top: 60px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+	.main-nav { display: none; }
+
+	.article-header h1 { font-size: 28px; }
+
+	.dek { font-size: 17px; }
+}
